@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:layout_margin="16dp"
+    android:background="@android:color/transparent">
+
+    <!-- Defining where should text be placed. You set you text color here -->
+    <TextView
+        android:id="@+id/lstContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:gravity="left"
+        android:fontFamily="@font/roboto_regular"
+        android:text="test"
+        android:padding="5dp"
+        android:textColor="#000" />
+
+
+</LinearLayout>

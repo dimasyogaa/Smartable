@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Smartable</string>
+    <string name="todo">TODO</string>
+    <string name="ig_debora">\@debyrubyjane</string>
+    <string name="ig_angga">\@erlanggawahyu23</string>
+    <string name="ig_gilbert">\@gilbert_satria</string>
+    <string name="ig_zela">\@rdindawgizela</string>
+    <string name="ig_odang">\@odang_risky</string>
+    <string name="ig_rizal">\@setiyawan_ra</string>
+    <string name="ig_yoga">\@yogadimas85</string>
+    <string name="email_yoga">\yogadimaspambudi@gmail.com</string>
+    <string name="email_angga">\erlanggafirman2309@gmail.com</string>
+    <string name="please_contact">For more information about this app,\n
+    you can directly contact by clicking the label below</string>
+    <string name="turnonbt">Turn on Bluetooth,\nthen please click again…!</string>
+    <string name="clickagain">Please click again!</string>
+</resources>

@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_primary_browndark"
+    tools:context=".AboutUsActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@color/overlayDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="325dp"
+                android:layout_height="725dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/bg_lay_about"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="About us"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="275dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@color/colorSecondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24.5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Debora Gadis"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_ig">
+
+                        <ImageView
+                            android:id="@+id/iv_ig"
+                            android:layout_width="12.5dp"
+                            android:layout_height="12.5dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_ig" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toEndOf="@+id/iv_ig"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:text="@string/ig_debora"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Erlangga Wahyu"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_ig">
+                        <ImageView
+                            android:id="@+id/iv_ig_1"
+                            android:layout_width="12.5dp"
+                            android:layout_height="12.5dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_ig" />
+
+                        <TextView
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toEndOf="@+id/iv_ig_1"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:text="@string/ig_angga"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Gilbert Satria"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_ig">
+
+                        <ImageView
+                            android:id="@+id/iv_ig_3"
+                            android:layout_width="12.5dp"
+                            android:layout_height="12.5dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_ig" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5.5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toEndOf="@+id/iv_ig_3"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:text="@string/ig_gilbert"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="R. Wahyu Gizela"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_ig">
+
+                        <ImageView
+                            android:id="@+id/iv_ig_4"
+                            android:layout_width="12.5dp"
+                            android:layout_height="12.5dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_ig" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5.5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toEndOf="@+id/iv_ig_4"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:text="@string/ig_zela"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Risky Odang"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="150dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_ig">
+
+                        <ImageView
+                            android:id="@+id/iv_ig_5"
+                            android:layout_width="12.5dp"
+                            android:layout_height="12.5dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_ig" />
+
+                        <TextView
+                            android:layout_width="92dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5.5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toEndOf="@+id/iv_ig_5"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:text="@string/ig_odang"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Rizal Aji"
+                        android:textColor="@color/colorSecondary"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="140dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_ig">
+
+                        <ImageView
+                            android:id="@+id/iv_ig_6"
+                            android:layout_width="12.5dp"
+                            android:layout_height="12.5dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_ig" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5.5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toEndOf="@+id/iv_ig_6"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:text="@string/ig_rizal"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="18dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+                    <RelativeLayout
+                        android:layout_width="280dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_email">
+
+                        <ImageView
+                            android:id="@+id/iv_ig_7"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/ic_email" />
+
+                        <TextView
+                            android:id="@+id/tv_email_to_yoga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_toEndOf="@+id/iv_ig_7"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:text="@string/email_yoga"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="172dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_ig_yogadimas">
+
+                        <ImageView
+                            android:id="@+id/iv_ig_8"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/ic_ig" />
+
+                        <TextView
+                            android:id="@+id/tv_ig_yoga"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="5.5dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_toEndOf="@+id/iv_ig_8"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:gravity="center_vertical"
+                            android:text="@string/ig_yoga"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+                    <RelativeLayout
+                        android:id="@+id/email_to_angga"
+                        android:layout_width="290dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_email">
+
+                        <ImageView
+                            android:id="@+id/iv_ig_7_1"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@drawable/ic_email" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_toEndOf="@+id/iv_ig_7_1"
+                            android:fontFamily="@font/roboto_condensed_light_italic"
+                            android:gravity="center"
+                            android:text="@string/email_angga"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="275dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@color/colorSecondary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_condensed_italic"
+                    android:text="@string/please_contact"
+                    android:textColor="@color/colorSecondary"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="32dp"
+                    android:gravity="center_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:src="@drawable/ic_copyright"/>
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2020"
+                        android:textColor="@color/colorSecondary"
+                        android:fontFamily="@font/roboto_thin"
+                        android:textSize="8dp"/>
+
+
+                    <View
+                        android:layout_marginStart="2dp"
+                        android:layout_width="0.1dp"
+                        android:layout_height="8dp"
+                        android:background="@color/colorSecondary" />
+
+                    <TextView
+                        android:layout_marginStart="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SMARTABLE"
+                        android:textColor="@color/colorSecondary"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="8dp"/>
+
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+        android:layout_width="61dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/ic_smartable_shadow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

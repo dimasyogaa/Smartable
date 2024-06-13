@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_primary_browndark"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@color/overlayDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="61dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_smartable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/bodoni_bd_bt_bold"
+        android:text="SMARTABLE"
+        android:textColor="@color/colorSecondary"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="223dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ornament"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    <View
+        android:layout_width="99dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="198dp"
+        android:background="@drawable/bg_lay_search"
+        app:layout_constraintEnd_toStartOf="@+id/search"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/search"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_menu"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="50.5dp"
+            android:layout_height="50.5dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_bluetooth" />
+
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="SEARCH"
+            android:textColor="@color/colorSecondary"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/listview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bg_listview"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select">
+
+        <ListView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            android:scrollbars="none"></ListView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/connect"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/bg_menu"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select">
+
+        <ImageButton
+            android:id="@+id/btn_connect"
+            android:layout_width="50.5dp"
+            android:layout_height="50.5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_bluetooth_pair" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="CONNECT"
+            android:textColor="@color/colorSecondary"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_turnon_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/architectsdaughter"
+        android:text="@string/turnonbt"
+        android:textColor="@color/colorSecondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/architectsdaughter"
+        android:text="@string/clickagain"
+        android:textColor="@color/colorSecondary"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Make sure the device you want to connect to is in pairing mode"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search" />
+
+    <ImageView
+        android:id="@+id/turn"
+        android:layout_width="34dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_turn"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toBottomOf="@+id/again" />
+
+    <ImageView
+        android:id="@+id/turn_bt"
+        android:layout_width="34dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_turn"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toBottomOf="@+id/tv_turnon_bt" />
+
+    <ImageView
+        android:id="@+id/about"
+        android:layout_width="47dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_about_us"
+        app:layout_constraintBottom_toTopOf="@+id/tv_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="About Us"
+        android:textColor="@color/colorSecondary"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
